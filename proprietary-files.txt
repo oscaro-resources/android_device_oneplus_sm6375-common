@@ -622,6 +622,13 @@ odm/etc/nfc/nfc_conf_ref|60498e1327a2246f7a4606589184cd0ce81fbdae
 odm/etc/nfc/nfc_fw_ref|332ad86904ef6f62a9a39fc29d1b60720460bb5d
 odm/lib/libpn557_fw.so:vendor/lib64/libpn557_fw.so|5fd4d17960d258563557d47d70c4d9d11a79fd15
 
+# OPLUS Project
+odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
+odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc
+odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
+odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
+odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service

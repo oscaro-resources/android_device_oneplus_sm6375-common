@@ -17,7 +17,7 @@ persist.vendor.overlay.izat.optin=rro
 dev.pm.dyn_samplingrate=1
 
 # Multi-Gen LRU
-persist.device_config.mglru_native.lru_gen_config=core
+persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1

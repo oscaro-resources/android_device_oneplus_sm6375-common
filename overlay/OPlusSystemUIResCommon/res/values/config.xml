@@ -11,4 +11,8 @@
     <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
          keyguardMaxRefreshRate. -->
     <integer name="config_keyguardRefreshRate">60</integer>
+
+    <!-- Doze: does this device support STATE_DOZE?  -->
+    <bool name="doze_display_state_supported">false</bool>
+
 </resources>

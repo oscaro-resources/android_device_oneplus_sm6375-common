@@ -111,6 +111,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.memtrack-service
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze \

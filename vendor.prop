@@ -192,6 +192,8 @@ debug.stagefright.c2inputsurface=-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
 
 # Radio
 keyguard.no_require_sim=true

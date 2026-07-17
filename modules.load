@@ -1,3 +1,11 @@
+ax_thread_snooper.ko
+ax_affinity_guard.ko
+ax_boost.ko
+ax_atcm.ko
+ax_frame_boost.ko
+ax_burst_sched.ko
+ax_binder_ux.ko
+ax_binder_obs.ko
 adsp_loader_dlkm.ko
 apr_dlkm.ko
 bolero_cdc_dlkm.ko

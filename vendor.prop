@@ -187,6 +187,19 @@ vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.gralloc.secure_preview_only=1
 
 # HWUI
+persist.sys.hwui.re_scale=0.67
+persist.sys.hwui.re_lscale=0.4
+persist.sys.hwui.re_larea=250000
+persist.sys.hwui.re_prefetch=true
+persist.sys.hwui.re_pf_area=8192
+persist.sys.hwui.re_pf_sarea=32768
+persist.sys.hwui.bmp_scale=0.67
+persist.sys.hwui.bmp_area=120000
+persist.sys.hwui.hwbmp_scale=0.67
+persist.sys.hwui.hwbmp_area=120000
+persist.sys.hwui.pcache=true
+persist.sys.hwui.pcache_mb=8
+persist.sys.hwui.res_cache=96
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 

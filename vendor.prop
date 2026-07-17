@@ -152,6 +152,7 @@ debug.sf.earlyGl.app.duration=13666666
 debug.sf.earlyGl.sf.duration=10500000
 debug.sf.enable_gl_backpressure=false
 debug.sf.enable_hwc_vds=0
+debug.sf.hwc.min.duration=2000000
 debug.sf.late.app.duration=13666666
 debug.sf.late.sf.duration=10500000
 debug.sf.latch_unsignaled=1

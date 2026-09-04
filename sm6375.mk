@@ -84,6 +84,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera_metadata_shim
 
+$(call soong_config_set,libcameraservice,ext_lib,//$(LOCAL_PATH)/camera:libcameraservice_extension.op_holi)
+
 # Dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 

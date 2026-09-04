@@ -1,0 +1,1 @@
+genfscon sysfs /devices/platform/soc/5c1c000.qcom,cci1/5c1c000.qcom,cci1:qcom,camera-flash@0/torch_brightness u:object_r:sysfs_torch:s0

@@ -102,4 +102,7 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Sets the scaling divisor for battery current values in Power Insight. -->
+    <integer name="config_powerInsightCurrentDivisor">-1</integer>
 </resources>

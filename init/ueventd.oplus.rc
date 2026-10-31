@@ -19,3 +19,11 @@
 
 # WiFi
 firmware_directories /odm/etc/wifi/
+
+# CPU and devfreq nodes for PowerHAL
+/sys/devices/system/cpu/cpu*    cpufreq/scaling_min_freq    0660    system    system
+/sys/devices/system/cpu/cpu*    cpufreq/scaling_max_freq    0660    system    system
+/sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/*    min_freq          0664    system    system
+/sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/*/bw_hwmon    *        0664    system    system
+/sys/devices/platform/soc/soc:qcom,cpu*-cpu-ddr-lat*/devfreq/*    min_freq       0664    system    system
+/sys/devices/platform/soc/*.qcom,cpu*-cpu-l3-lat/devfreq/*    min_freq           0664    system    system

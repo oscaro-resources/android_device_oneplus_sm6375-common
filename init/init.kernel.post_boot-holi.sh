@@ -146,6 +146,9 @@ echo 0-5 > /dev/cpuset/system-background/cpus
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
+# Set RT uclamp default
+echo 128 > /proc/sys/kernel/sched_util_clamp_min_rt_default
+
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 

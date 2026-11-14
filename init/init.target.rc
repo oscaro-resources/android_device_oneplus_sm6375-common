@@ -55,6 +55,7 @@ on init
     chown system system /dev/cpuctl/top-app/cpu.uclamp.min
     chown system system /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
     chown system system /dev/cpuctl/foreground/cpu.uclamp.min
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
     chmod 0664 /dev/cpuctl/tasks
     chmod 0664 /dev/cpuctl/foreground/tasks
     chmod 0664 /dev/cpuctl/background/tasks
@@ -63,10 +64,14 @@ on init
     chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
     chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
     chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive
     write /dev/cpuctl/foreground/cpu.rt_runtime_us 950000
     write /dev/cpuctl/background/cpu.rt_runtime_us 950000
     write /dev/cpuctl/top-app/cpu.rt_runtime_us 950000
     write /dev/cpuctl/rt/cpu.rt_runtime_us 950000
+
+    # RT uclamp uses the scheduler's 0..1024 scale.
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 128
 
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice

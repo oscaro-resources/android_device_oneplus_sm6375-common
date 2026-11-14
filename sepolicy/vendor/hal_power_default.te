@@ -3,3 +3,10 @@ allow hal_power_default vendor_sysfs_devfreq:dir r_dir_perms;
 allow hal_power_default vendor_sysfs_devfreq:file rw_file_perms;
 allow hal_power_default vendor_sysfs_kgsl:dir r_dir_perms;
 allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
+
+# ADPF updates app and SurfaceFlinger threads across per-app MLS categories
+typeattribute hal_power_default mlstrustedsubject;
+
+# Apply per-thread uclamp for app and SurfaceFlinger hint sessions
+allow hal_power_default self:global_capability_class_set sys_nice;
+allow hal_power_default { appdomain surfaceflinger }:process { getsched setsched };

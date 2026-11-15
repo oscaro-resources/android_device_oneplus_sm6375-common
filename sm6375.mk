@@ -283,6 +283,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.powerhal.interaction.min=200 \
+    vendor.powerhal.interaction.max=800 \
+    vendor.powerhal.interaction.offset=100
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \

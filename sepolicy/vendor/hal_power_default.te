@@ -7,6 +7,6 @@ allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
 # ADPF updates app and SurfaceFlinger threads across per-app MLS categories
 typeattribute hal_power_default mlstrustedsubject;
 
-# Apply per-thread uclamp for app and SurfaceFlinger hint sessions
+# Apply per-thread uclamp for app, System Server, SurfaceFlinger, and HWC hint sessions
 allow hal_power_default self:global_capability_class_set sys_nice;
-allow hal_power_default { appdomain surfaceflinger }:process { getsched setsched };
+allow hal_power_default { appdomain hal_graphics_composer_default surfaceflinger system_server }:process { getsched setsched };

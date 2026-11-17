@@ -358,7 +358,8 @@ SPAMMY_LOG_TAGS := \
     BATTERY_CHG \
     BackgroundInstallControlService \
     BackupTransportManager \
-    ActivityManager
+    ActivityManager \
+    libprocessgroup
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
